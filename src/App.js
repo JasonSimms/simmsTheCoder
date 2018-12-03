@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.scss";
 import portrait from "./style/images/jason1.jpg"
+
+import Toolbox from "./components/Toolbox"
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
             My stack of choice currently is React, Express, NodeJs, and MongoDb.
             But I'm always experimenting with new to me tools.
           </div>
+          <Toolbox/>
           <div className="seperator" />
 
           <div className="greeting">
@@ -32,9 +34,7 @@ class App extends Component {
           </div>
         </div>
 
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-        </header>
+        
       </div>
     );
   }
